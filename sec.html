@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NyayBot - Legal Awareness</title>
+  <style>body.dark-theme {
+    background-color: #111827;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    color: #9ca3af;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #00000033;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000055;
+  }
+  
+  .card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3b82f6;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card button {
+    background: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .card button:hover {
+    background: #3b82f6;
+    color: white;
+  }
+  </style>
+  <script>
+    function goTo(section) {
+  window.location.href = `sections/${section}.html`;
+}
+
+  </script>
+</head>
+<body class="dark-theme">
+  <div class="container">
+    <h1>Legal Awareness</h1>
+    <p class="subtitle">Know your rights. Empower yourself with knowledge.</p>
+
+    <div class="grid">
+      <div class="card" onclick="goTo('women-security')">
+        <div class="icon">🛡️</div>
+        <h3>Women Security</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('child-labour')">
+        <div class="icon">👶</div>
+        <h3>Child Labour</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('employee-rights')">
+        <div class="icon">💼</div>
+        <h3>Employee Rights</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('education-rights')">
+        <div class="icon">📚</div>
+        <h3>Education Rights</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('education-schemes')">
+        <div class="icon">🎓</div>
+        <h3>Education Schemes</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('internship-schemes')">
+        <div class="icon">📄</div>
+        <h3>Internship Schemes</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('government-schemes')">
+        <div class="icon">🏛️</div>
+        <h3>Government Schemes</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('legal-aid')">
+        <div class="icon">⚖️</div>
+        <h3>Legal Aid Services</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('consumer-rights')">
+        <div class="icon">🛍️</div>
+        <h3>Consumer Rights</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('health-rights')">
+        <div class="icon">🏥</div>
+        <h3>Health Rights & Services</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('senior-rights')">
+        <div class="icon">👴</div>
+        <h3>Senior Citizen Rights</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('disability-rights')">
+        <div class="icon">♿</div>
+        <h3>Disability Rights</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('cyber-security')">
+        <div class="icon">💻</div>
+        <h3>Cyber Security</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('voting-rights')">
+        <div class="icon">🗳️</div>
+        <h3>Voting Rights</h3>
+        <button>Learn More</button>
+      </div>
+      <div class="card" onclick="goTo('rti-rights')">
+        <div class="icon">📃</div>
+        <h3>RTI – Right to Information</h3>
+        <button>Learn More</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

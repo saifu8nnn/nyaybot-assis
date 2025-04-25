@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NyayBot: Personal Legal Assistant for Bharat</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Notable&family=Rationale&family=Zen+Tokyo+Zoo&display=swap');
+    body{
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #2A2A2A, #1A1A2E); /* Dark gradient background */
+      color: #fff;
+      height: 80vh;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: "Rationale", sans-serif;
+      
+    }
+    img{
+      padding-right: 8px;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #FF8C00; /* Amber color */
+    }
+
+    .navbar .logo i {
+      font-size: 1.8em;
+      margin-right: 12px;
+      color: #FF8C00;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #FF8C00;
+      text-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
+    }
+
+    /* Main Content */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 80px 20px;
+      text-align: center;
+      background:linear-gradient(rgb(35, 32, 30),rgba(60, 52, 52, 0)),url(back.png);
+      background-position: center;
+    
+    }
+
+    
+    /* Section Titles */
+    .section-title {
+      font-size: 2.5em;
+      color: #fafafa; /* Amber color */
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    /* Flex Layout for Sections */
+    .sections-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* Section Blocks */
+    .section-block {
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+      border-radius: 15px;
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(10px); /* Glassmorphism effect */
+    }
+
+    .section-block:hover {
+      transform: translateY(-10px); /* Slight lift effect */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .section-block i {
+      font-size: 3em;
+      color: #FF8C00; /* Amber color for icons */
+      margin-bottom: 20px;
+    }
+
+    .section-block h2 {
+      font-size: 1.6em;
+      color: #FF8C00;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .section-block p {
+      font-size: 1.1em;
+      color: #e0e0e0;
+      line-height: 1.5;
+    }
+
+    .section-block input {
+      padding: 12px;
+      width: 80%;
+      border-radius: 8px;
+      border: none;
+      margin: 15px 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .section-block button {
+      background-color: #FF8C00; /* Amber background for buttons */
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .section-block button:hover {
+      background-color: #FF4500; /* Darker amber on hover */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .sections-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-block {
+        width: 90%;
+      }
+
+      .section-title {
+        font-size: 2em;
+      }
+    }
+  </style>
+
+  <script>
+    function handleSearch() {
+      alert("Searching for law section...");
+    }
+
+    function handleChatbot() {
+      alert("Chatbot feature coming soon!");
+    }
+  </script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="icon.png" alt="none" height="70px" width="70px"></img> NyayBot: Personal Legal Assistant for Bharat
+    </div>
+    <div class="nav-links">
+       <i class="fa-solid fa-scale-balanced"></i>
+      <a href="#awareness">Legal Awareness</a>
+      <a href="#lawfinder">Law & Act Finder</a>
+      <a href="#documenthelper">Document Helper</a>
+      <a href="#connect">Legal Connect</a>
+      <a href="#chatbot" onclick="handleChatbot()">NyayBot</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+  
+    <!-- First Row of Sections -->
+    <div class="section-title">Legal Resources</div>
+    <div class="sections-row">
+      <div id="awareness" class="section-block">
+        <i class="fas fa-user-tie"></i>
+        <h2>Legal Awareness</h2>
+        <p>Learn about your rights in various areas such as labor, women safety, child abuse, and more.</p>
+        <a href="sec.html">know More</a>
+
+      </div>
+      <div id="lawfinder" class="section-block">
+        <i class="fas fa-search"></i>
+        <h2>Law & Act Finder</h2>
+        <input type="text" placeholder="e.g. Section 420 IPC">
+        <button onclick="handleSearch()">Search</button>
+      </div>
+      <div id="documenthelper" class="section-block">
+        <i class="fas fa-file-alt"></i>
+        <h2>Document Helper</h2>
+        <p>Get a list of necessary documents for generating legal papers like certificates, affidavits, etc.</p>
+      </div>
+    </div>
+
+    <!-- Second Row of Sections -->
+    <div class="section-title">Legal Services</div>
+    <div class="sections-row">
+      <div id="connect" class="section-block">
+        <i class="fas fa-users"></i>
+        <h2>Legal Connect</h2>
+        <p>Find and get in touch with verified legal professionals in your area.</p>
+      </div>
+      <div id="chatbot" class="section-block">
+        <i class="fas fa-robot"></i>
+        <h2>NyayBot</h2>
+        <p>Ask legal questions and get simplified, accurate answers from AI.</p>
+        <button>
+            <a href="https://www.chatbase.co/chatbot-iframe/U4rmLKNpUudvGoSp45CbR">Chat with NyayBot</a>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
